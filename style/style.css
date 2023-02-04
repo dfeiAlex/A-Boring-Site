@@ -3,6 +3,16 @@
   src: url("./../fonts/Nunito-Regular.ttf");
 }
 
+/* @font-face {
+  font-family: ubuntu-mono;
+  src: url("./../fonts/UbuntuMono-Regular.ttf");
+} */
+
+@font-face {
+  font-family: inconsolata;
+  src: url("./../fonts/Inconsolata.ttf");
+}
+
 * {
   box-sizing: border-box;
   font-family: nunito;
@@ -77,6 +87,7 @@ header {
 #navbar li:hover {
   border-bottom: solid 1px #ed6a5a;
   border-top: solid 1px #ed6a5a;
+  color:#17b9ff;
 }
 
 footer {
@@ -127,27 +138,92 @@ footer p {
   padding: 20px;
 }
 
-.main {
+.content .main {
   width: 70vw;
-  color: #3b3b3b;
-}
-
-.main h1 {
-  font-weight: 500;
-  font-size: 40px;
-}
-
-.main p {
-  text-align: justify;
-  text-justify: inter-word;
-  font-size: 20px;
+  color: #4b4b4b;
 }
 
 hr {
-  margin: 40px;
+  background-color: #ddd;
+  border: none;
+  height: 1px;
+  width: 60%;
+  margin: 40px auto 40px;
+}
+
+.main h1,
+.main h2 {
+	text-align: center;
+	color: #ed6a5a;
+}
+
+/* .main * {
+	font-family: inconsolata;
+} */
+
+.main h1 {
+	font-weight: 500;
+	font-size: 50px;
+}
+
+.main p {
+  text-align: center;
+	font-size: 25px;
+  margin: 0;
 }
 
 .main h2 {
-  font-weight: 500;
-  font-size: 30px;
+	font-weight: 500;
+	font-size: 30px;
+}
+
+.link-container {
+  display: inline-flex;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.link-container .game-link {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  width: 20vh;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.game-link p {
+  font-size: 16px;
+}
+
+.link-container-container {
+  display: flex;
+  justify-content: center;
+}
+
+.link-container .game-link:hover {
+  border: 1px solid #ed6a5a;
+}
+
+.game-link div {
+  height: 60%;
+  width: 60%;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-link a {
+  background-color: #e7e7e7;
+}
+
+.game-link div img {
+  height: 80%;
+  width: auto;
 }
