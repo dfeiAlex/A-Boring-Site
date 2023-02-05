@@ -3,18 +3,13 @@
   src: url("./../fonts/Nunito-Regular.ttf");
 }
 
-/* @font-face {
-  font-family: ubuntu-mono;
-  src: url("./../fonts/UbuntuMono-Regular.ttf");
-} */
-
-@font-face {
-  font-family: inconsolata;
-  src: url("./../fonts/Inconsolata.ttf");
-}
-
 * {
   box-sizing: border-box;
+}
+
+header,
+footer,
+.main {
   font-family: nunito;
 }
 
@@ -126,16 +121,13 @@ footer p {
 
 .content {
   flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
 #selected-link {
   color: #17b9ff;
-}
-
-.content { 
-  display: flex;
-  justify-content: center;
-  padding: 20px;
 }
 
 .content .main {

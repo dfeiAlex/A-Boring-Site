@@ -1,0 +1,119 @@
+/* #ed6a5a */
+/* #17b9ff */
+
+@font-face {
+  font-family: roboto-mono;
+  src: url("./../fonts/Roboto-Mono.ttf");
+}
+
+.content {
+  font-family: roboto-mono;
+}
+
+h1 {
+  color: #4b4b4b;
+  font-size: 35px;
+  text-align: center;
+}
+
+#main {
+  width: 70vw;
+}
+
+#game-container {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cell-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.cell {
+  height: 20px;
+  width: 20px;
+  border-radius: 100px;
+  background-color: #5b5b5b;
+}
+
+.cell.empty {
+  background-color: #e7e7e7;
+}
+
+.cell.current {
+  background-color: #17b9ff;
+}
+
+.cell.target {
+  background-color: #ed6a5a;
+}
+
+.cell.former-current {
+  background-color: #c1eeff;
+}
+
+#guess-container {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.guess {
+  background-color: #17b9ff;
+  border-radius: 1000px;
+  display: flex;
+  height: 2.5em;
+  width: 2.5em;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 20px
+}
+
+#input-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#input-container div {
+  font-size: 20px;
+}
+
+#txtNumber {
+  font-size: 20px;
+  text-align: center;
+  width: 3em;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-family: roboto-mono;
+}
+
+#btnGuess {
+  font-size: 20px;
+  padding: 10px;
+  color: #fff;
+  background-color: #17b9ff;
+  border-radius: 10px;
+  font-family: roboto-mono;
+  font-weight: bolder;
+  border: 1px solid #5b5b5b;
+}
+
+#btnGuess:hover {
+  background-color: #15a5e2;
+  cursor: pointer;
+}
