@@ -11,13 +11,16 @@
 }
 
 h1 {
-  color: #4b4b4b;
+  color: #ed6a5a;
   font-size: 35px;
   text-align: center;
 }
 
 #main {
   width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #game-container {
@@ -58,7 +61,7 @@ h1 {
   background-color: #ed6a5a;
 }
 
-.cell.former-current {
+.cell.former-guess {
   background-color: #c1eeff;
 }
 
@@ -92,6 +95,12 @@ h1 {
   font-size: 20px;
 }
 
+#game-state {
+  font-size: 25px;
+  margin: 0 0 10px;
+  color:#4b4b4b;
+}
+
 #txtNumber {
   font-size: 20px;
   text-align: center;
@@ -105,15 +114,42 @@ h1 {
 #btnGuess {
   font-size: 20px;
   padding: 10px;
-  color: #fff;
-  background-color: #17b9ff;
+  color: #4b4b4b;
+  background-color: #fff;
   border-radius: 10px;
   font-family: roboto-mono;
   font-weight: bolder;
-  border: 1px solid #5b5b5b;
+  border: 1px solid #ddd;
 }
 
 #btnGuess:hover {
-  background-color: #15a5e2;
+  background-color: #17b9ff;
+  color: #fff;
   cursor: pointer;
+  border-color: #4b4b4b;
+}
+
+.tutorial {
+  width: 80%;
+}
+
+.tutorial h2 {
+  font-size: 30px;
+  color: #4b4b4b;
+  text-align: center;
+}
+
+.tutorial p, .tutorial ul {
+  font-size: 20px;
+  color: #4b4b4b;
+}
+
+#cells-tutorial {
+  list-style: none;
+}
+
+#cells-tutorial li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
