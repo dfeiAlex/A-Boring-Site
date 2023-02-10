@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/game-style.css" />
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <title>Rock Paper Scissors</title>
   </head>
@@ -24,7 +25,7 @@
             <a class="game-link" href="./tic-tac-toe.html">Tic Tac Toe</a>
           </li>
           <li>
-          	<a class="game-link" href="./guessing-game.html">Guessing Game</a>
+            <a class="game-link" href="./guessing-game.html">Guessing Game</a>
           </li>
           <li>
             <a class="game-link" href="./hangman.html">Hangman</a>
@@ -33,14 +34,31 @@
       </div>
     </header>
     <div class="content">
-			
+      <div id="main">
+        <h1>Rock Paper Scissors</h1>
+        <div id="rps-container" class="game-container">
+          <div id="playerScore">2</div>
+          <div id="rps-main">
+            <h2 id="game-state">You Win! Rock beats scissors!</h2>
+            <div class="img-container">
+              <img src="./images/rock.png" alt="User guess: Rock" id="playerImage" class="gameImage" />
+              <p>VS</p>
+              <img src="./images/scissors.png" alt="Computer guess: Scissors" id="computerImage" class="gameImage" />
+            </div>
+          </div>
+          <div id="computerScore">1</div>
+        </div>
+        <div class="tutorial">
+          <h2>How To Play</h2>
+        </div>
+      </div>
     </div>
     <footer>
       <div id="github-link">
-        <img src="./images/github-mark.png" alt="GitHub Logo">
+        <img src="./images/github-mark.png" alt="GitHub Logo" />
         <a href="https://github.com/dfeiAlex/A-Boring-Site">GitHub Repo</a>
       </div>
-			<p>&copy; Alex Dilion</p>
+      <p>&copy; Alex Dilion</p>
     </footer>
   </body>
 </html>
