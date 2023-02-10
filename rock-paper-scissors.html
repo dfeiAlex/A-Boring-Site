@@ -36,17 +36,27 @@
     <div class="content">
       <div id="main">
         <h1>Rock Paper Scissors</h1>
-        <div id="rps-container" class="game-container">
-          <div id="playerScore">2</div>
-          <div id="rps-main">
-            <h2 id="game-state">You Win! Rock beats scissors!</h2>
-            <div class="img-container">
-              <img src="./images/rock.png" alt="User guess: Rock" id="playerImage" class="gameImage" />
-              <p>VS</p>
-              <img src="./images/scissors.png" alt="Computer guess: Scissors" id="computerImage" class="gameImage" />
+        <div id="rps-wrapper" class="game-container">
+          <div id="rps-container">
+            <div id="playerScore">2</div>
+            <div id="rps-main">
+              <h2 id="game-state">You Win! Rock beats scissors!</h2>
+              <div class="img-container">
+                <img src="./images/rock.png" alt="User guess: Rock" id="playerImage" class="gameImage" />
+                <p>VS</p>
+                <img src="./images/scissors.png" alt="Computer guess: Scissors" id="computerImage" class="gameImage" />
+              </div>
             </div>
+            <div id="computerScore">1</div>
           </div>
-          <div id="computerScore">1</div>
+          <div id="input-container-rps">
+            <div>Choose a hand: </div>
+            <div class="btn-container">
+              <input type="image" src="./images/rock.png" alt="Rock button" class="rps-btn" id="btnRock">
+              <input type="image" src="./images/paper.png" alt="Paper button" class="rps-btn" id="btnPaper">
+              <input type="image" src="./images/scissors.png" alt="Scissors button" class="rps-btn" id="btnScissors">
+            </div>
+        </div>
         </div>
         <div class="tutorial">
           <h2>How To Play</h2>
