@@ -160,7 +160,7 @@ h1 {
 }
 
 #cells-tutorial {
-  list-style: none;
+  list-style:none;
 }
 
 #cells-tutorial li {
@@ -207,7 +207,6 @@ h1 {
 }
 
 .gameImage {
-  /* border: 1px solid #ddd; */
   border-radius: 10px;
 }
 
@@ -245,4 +244,35 @@ h1 {
 
 .rps-btn:active {
   background-color: #c1eeff;
+}
+
+#diagram-container {
+  margin: 30px;
+}
+
+.rps-tutorial {
+  font-size: 25px;
+  color: #17b9ff;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 800;
+  justify-content: center;
+  margin: 10px;
+}
+
+.rps-tutorial img{
+  height: 3em;
+  width: 3em;
+}
+
+.tutorial-image.left {
+  border: 1px solid #17b9ff;
+  border-radius: 10px;
+}
+
+.tutorial-image.right {
+  border: 1px solid #ed6a5a;
+  border-radius: 10px;
+  transform: scaleX(-1);
 }

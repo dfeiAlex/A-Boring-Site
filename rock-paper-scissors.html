@@ -50,7 +50,7 @@
             <div id="computerScore">1</div>
           </div>
           <div id="input-container-rps">
-            <div>Choose a hand: </div>
+            <div>Pick a hand: </div>
             <div class="btn-container">
               <input type="image" src="./images/rock.png" alt="Rock button" class="rps-btn" id="btnRock">
               <input type="image" src="./images/paper.png" alt="Paper button" class="rps-btn" id="btnPaper">
@@ -60,6 +60,31 @@
         </div>
         <div class="tutorial">
           <h2>How To Play</h2>
+          <p>Play a game of rock paper scissors with the computer! Each hand beats, loses to or ties with another. The first to 5 wins!</p>
+          <br>
+          <p>Rules:</p>
+          <ul>
+            <li>To <span style="color: #17b9ff;"><strong>win</strong></span> the round, you must role a hand that beats the opponents hand.</li>
+            <li>You <span style="color: #ed6a5a;"><strong>lose</strong></span> if the opponent roles a hand that beats yours.</li>
+            <li>A tie happens when both players role the same hand</li>
+          </ul>
+          <div id="diagram-container">
+            <div class="rps-tutorial">
+              <img src="./images/rock.png" alt="Rock" class="tutorial-image left"> 
+              beats 
+              <img src="./images/scissors.png" alt="Scissors" class="tutorial-image right">
+            </div>
+            <div class="rps-tutorial">
+              <img src="./images/paper.png" alt="Paper" class="tutorial-image left"> 
+              beats 
+              <img src="./images/rock.png" alt="Rock" class="tutorial-image right">
+            </div>
+            <div class="rps-tutorial">
+              <img src="./images/scissors.png" alt="Scissors" class="tutorial-image left"> 
+              beats 
+              <img src="./images/paper.png" alt="Paper" class="tutorial-image right">
+            </div>
+          </div>
         </div>
       </div>
     </div>
