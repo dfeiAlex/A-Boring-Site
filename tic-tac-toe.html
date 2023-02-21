@@ -1,63 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style/game-style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="./style/style.css" />
-  <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
-  <title>Tic Tac Toe</title>
-  <link rel="stylesheet" href="./style/game-style.css">
-</head>
-
-<body>
-  <header>
-    <div id="title-container">
-      <div id="logo">
-        <p>a</p>
+  <body>
+    <header>
+      <div id="title-container">
+        <div id="logo">
+          <p>a</p>
+        </div>
+        <a href="./index.html" id="logo-text">boring site</a>
       </div>
-      <a href="./index.html" id="logo-text">boring site</a>
-    </div>
-    <div id="navbar-container">
-      <ul id="navbar">
-        <li>
-          <a class="game-link" href="./rock-paper-scissors.html">Rock Paper Scissors</a>
-        </li>
-        <li>
-          <a id="selected-link" class="game-link" href="./tic-tac-toe.html">Tic Tac Toe</a>
-        </li>
-        <li>
-          <a class="game-link" href="./guessing-game.html">Guessing Game</a>
-        </li>
-        <li>
-          <a class="game-link" href="./hangman.html">Hangman</a>
-        </li>
-      </ul>
-    </div>
-  </header>
-  <div class="content">
-    <h1>Tic Tac Toe</h1>
-    <div class="ttt-wrapper">
-      <div id="game-state">You Win!</div>
-      <div class="ttt-container">
-        <div class="ttt-cell" id="cell1"><img src="./images/nought.png" alt="Nought at A1"></div>
-        <div class="ttt-cell empty" id="cell2"></div>
-        <div class="ttt-cell" id="cell3"><img src="./images/cross.png" alt="Cross at A3"></div>
-        <div class="ttt-cell empty" id="cell4"></div>
-        <div class="ttt-cell" id="cell5"><img src="./images/nought.png" alt="Nought at B2"></div>
-        <div class="ttt-cell" id="cell6"><img src="./images/cross.png" alt="Cross at B3"></div>
-        <div class="ttt-cell empty" id="cell7"></div>
-        <div class="ttt-cell empty" id="cell8"></div>
-        <div class="ttt-cell" id="cell9"><img src="./images/nought.png" alt="Nought at C3"></div>
+      <div id="navbar-container">
+        <ul id="navbar">
+          <li>
+            <a class="game-link" href="./rock-paper-scissors.html"
+              >Rock Paper Scissors</a
+            >
+          </li>
+          <li>
+            <a id="selected-link" class="game-link" href="./tic-tac-toe.html"
+              >Tic Tac Toe</a
+            >
+          </li>
+          <li>
+            <a class="game-link" href="./guessing-game.html">Guessing Game</a>
+          </li>
+          <li>
+            <a class="game-link" href="./hangman.html">Hangman</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="content">
+      <h1>Tic Tac Toe</h1>
+      <div class="ttt-wrapper">
+        <div id="game-state">You Win!</div>
+        <div class="ttt-container">
+          <div class="ttt-cell" id="cell1">
+            <img src="./images/nought.png" alt="Nought at A1" />
+          </div>
+          <div class="ttt-cell empty" id="cell2"></div>
+          <div class="ttt-cell" id="cell3">
+            <img src="./images/cross.png" alt="Cross at A3" />
+          </div>
+          <div class="ttt-cell empty" id="cell4"></div>
+          <div class="ttt-cell" id="cell5">
+            <img src="./images/nought.png" alt="Nought at B2" />
+          </div>
+          <div class="ttt-cell" id="cell6">
+            <img src="./images/cross.png" alt="Cross at B3" />
+          </div>
+          <div class="ttt-cell empty" id="cell7"></div>
+          <div class="ttt-cell empty" id="cell8"></div>
+          <div class="ttt-cell" id="cell9">
+            <img src="./images/nought.png" alt="Nought at C3" />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <footer>
-    <div id="github-link">
-      <img src="./images/github-mark.png" alt="GitHub Logo">
-      <a href="https://github.com/dfeiAlex/A-Boring-Site">GitHub Repo</a>
-    </div>
-    <p>&copy; Alex Dilion</p>
-  </footer>
-</body>
-
+    <footer>
+      <div id="github-link">
+        <img src="./images/github-mark.png" alt="GitHub Logo" />
+        <a href="https://github.com/dfeiAlex/A-Boring-Site">GitHub Repo</a>
+      </div>
+      <p>&copy; Alex Dilion</p>
+    </footer>
+  </body>
 </html>
