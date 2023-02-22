@@ -223,3 +223,7 @@ hr {
   height: 80%;
   width: auto;
 }
+
+.tutorial.ttt-tutorial {
+  width: 55vw;
+}
