@@ -1,48 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
-    <title>Hangman</title>
-  </head>
 
-  <body>
-    <header>
-      <div id="title-container">
-        <div id="logo">
-          <p>a</p>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./style/game-style.css">
+  <title>Hangman</title>
+</head>
+
+<body>
+  <header>
+    <div id="title-container">
+      <div id="logo">
+        <p>a</p>
+      </div>
+      <a href="./index.html" id="logo-text">boring site</a>
+    </div>
+    <div id="navbar-container">
+      <ul id="navbar">
+        <li>
+          <a class="game-link" href="./rock-paper-scissors.html">Rock Paper Scissors</a>
+        </li>
+        <li>
+          <a class="game-link" href="./tic-tac-toe.html">Tic Tac Toe</a>
+        </li>
+        <li>
+          <a class="game-link" href="./guessing-game.html">Guessing Game</a>
+        </li>
+        <li>
+          <a id="selected-link" class="game-link" href="./hangman.html">Hangman</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="content">
+    <div id="main">
+      <h1>Hangman</h1>
+      <div id="hangman-container" class="game-container">
+        <div id="game-state">You're out of guesses!</div>
+        <div class="remaining-guesses">You have <span style="color: #17b9ff; font-weight: bold;">0</span> guesses remaining</div>
+        <div class="hangman-wrapper">
+          <img src="./images/hangman.png" alt="Hangman image">
         </div>
-        <a href="./index.html" id="logo-text">boring site</a>
+        <div class="letters-container">
+          <div class="letter">H</div>
+          <div class="letter">A</div>
+          <div class="letter">_</div>
+          <div class="letter">G</div>
+          <div class="letter">M</div>
+          <div class="letter">A</div>
+          <div class="letter">_</div>
+        </div>
+        <div id="guess-container">
+          <div class="guess hangman-guesses">E</div>
+          <div class="guess hangman-guesses">F</div>
+          <div class="guess hangman-guesses">B</div>
+          <div class="guess hangman-guesses">I</div>
+          <div class="guess hangman-guesses">O</div>
+          <div class="guess hangman-guesses">Z</div>
+          <div class="guess hangman-guesses">D</div>
+        </div>
+        <div id="input-container">
+          <div>Your guess:</div>
+          <input type="text" name="Your number" id="txtNumber" maxlength="1" />
+          <input type="button" value="Guess!" id="btnGuess" />
+        </div>
       </div>
-      <div id="navbar-container">
-        <ul id="navbar">
-          <li>
-            <a class="game-link" href="./rock-paper-scissors.html"
-              >Rock Paper Scissors</a
-            >
-          </li>
-          <li>
-            <a class="game-link" href="./tic-tac-toe.html">Tic Tac Toe</a>
-          </li>
-          <li>
-            <a class="game-link" href="./guessing-game.html">Guessing Game</a>
-          </li>
-          <li>
-            <a id="selected-link" class="game-link" href="./hangman.html"
-              >Hangman</a
-            >
-          </li>
-        </ul>
+      <div class="tutorial hangman">
+        <h2>How To Play</h2>
+        <p>
+          The computer chooses a word randomly. You need to guess all of the letters in the word before you run out of guesses. You have 7 guesses, choose wisely!
+        </p>
+        <br/>
       </div>
-    </header>
-    <div class="content"></div>
-    <footer>
-      <div id="github-link">
-        <img src="./images/github-mark.png" alt="GitHub Logo" />
-        <a href="https://github.com/dfeiAlex/A-Boring-Site">GitHub Repo</a>
-      </div>
-      <p>&copy; Alex Dilion</p>
-    </footer>
-  </body>
+    </div>
+  </div>
+  <footer>
+    <div id="github-link">
+      <img src="./images/github-mark.png" alt="GitHub Logo" />
+      <a href="https://github.com/dfeiAlex/A-Boring-Site">GitHub Repo</a>
+    </div>
+    <p>&copy; Alex Dilion</p>
+  </footer>
+</body>
+
 </html>
