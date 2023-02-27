@@ -4,19 +4,26 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="./style/style.css" />
+  <!-- Webpage icon -->
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="./style/game-style.css">
+  <!-- Webpage title -->
   <title>Hangman</title>
 </head>
 
 <body>
+  <!-- Contains the logo and navbar elements -->
   <header>
+    <!-- Logo container -->
     <div id="title-container">
       <div id="logo">
         <p>a</p>
       </div>
       <a href="./index.html" id="logo-text">boring site</a>
     </div>
+
+    <!-- Navbar container -->
+
     <div id="navbar-container">
       <ul id="navbar">
         <li>
@@ -34,12 +41,16 @@
       </ul>
     </div>
   </header>
+  <!-- Content of this page is inside this div -->
   <div class="content">
     <div id="main">
+      <!-- Content header -->
       <h1>Hangman</h1>
+      <!-- Game container -->
       <div id="hangman-container" class="game-container">
         <div id="game-state">You're out of guesses!</div>
-        <div class="remaining-guesses">You have <span style="color: #17b9ff; font-weight: bold;">0</span> guesses remaining</div>
+        <div class="remaining-guesses">You have <span style="color: #17b9ff; font-weight: bold;">0</span> guesses
+          remaining</div>
         <div class="hangman-wrapper">
           <img src="./images/hangman.png" alt="Hangman image">
         </div>
@@ -67,15 +78,18 @@
           <input type="button" value="Guess!" id="btnGuess" />
         </div>
       </div>
+      <!-- Tutorial container -->
       <div class="tutorial hangman">
         <h2>How To Play</h2>
         <p>
-          The computer chooses a word randomly. You need to guess all of the letters in the word before you run out of guesses. You have 7 guesses, choose wisely!
+          The computer chooses a word randomly. You need to guess all of the letters in the word before you run out of
+          guesses. You have 7 guesses, choose wisely!
         </p>
-        <br/>
+        <br />
       </div>
     </div>
   </div>
+  <!-- Footer container -->
   <footer>
     <div id="github-link">
       <img src="./images/github-mark.png" alt="GitHub Logo" />

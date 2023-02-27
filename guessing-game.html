@@ -1,211 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./style/game-style.css" />
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
-    <title>Guessing Game</title>
-  </head>
-  <body>
-    <header>
-      <div id="title-container">
-        <div id="logo">
-          <p>a</p>
-        </div>
-        <a href="./index.html" id="logo-text">boring site</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/game-style.css" />
+  <!-- Webpage icon -->
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+  <!-- Webpage icon -->
+  <title>Guessing Game</title>
+</head>
+
+<body>
+  <!-- Contains the logo and navbar elements -->
+  <header>
+    <!-- Logo container -->
+    <div id="title-container">
+      <div id="logo">
+        <p>a</p>
       </div>
-      <div id="navbar-container">
-        <ul id="navbar">
+      <a href="./index.html" id="logo-text">boring site</a>
+    </div>
+
+    <!-- Navbar container -->
+
+    <div id="navbar-container">
+      <ul id="navbar">
+        <li>
+          <a class="game-link" href="./rock-paper-scissors.html">Rock Paper Scissors</a>
+        </li>
+        <li>
+          <a class="game-link" href="./tic-tac-toe.html">Tic Tac Toe</a>
+        </li>
+        <li>
+          <a id="selected-link" class="game-link" href="./guessing-game.html">Guessing Game</a>
+        </li>
+        <li>
+          <a class="game-link" href="./hangman.html">Hangman</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- Content of this page is inside this div -->
+  <div class="content">
+    <div id="main">
+      <!-- Content header -->
+      <h1>Guessing Game</h1>
+      <!-- Game container -->
+      <div id="guessing-game-container" class="game-container">
+        <div id="game-state">Guess lower!</div>
+        <div id="cell-container">
+          <div id="cell1" class="cell empty"></div>
+          <div id="cell2" class="cell former-guess"></div>
+          <div id="cell3" class="cell empty"></div>
+          <div id="cell4" class="cell empty"></div>
+          <div id="cell5" class="cell empty"></div>
+          <div id="cell6" class="cell empty"></div>
+          <div id="cell7" class="cell empty"></div>
+          <div id="cell8" class="cell empty"></div>
+          <div id="cell9" class="cell empty"></div>
+          <div id="cell10" class="cell current"></div>
+          <div id="cell11" class="cell"></div>
+          <div id="cell12" class="cell"></div>
+          <div id="cell13" class="cell"></div>
+          <div id="cell14" class="cell"></div>
+          <div id="cell15" class="cell"></div>
+          <div id="cell16" class="cell"></div>
+          <div id="cell17" class="cell"></div>
+          <div id="cell18" class="cell"></div>
+          <div id="cell19" class="cell"></div>
+          <div id="cell20" class="cell"></div>
+          <div id="cell21" class="cell"></div>
+          <div id="cell22" class="cell"></div>
+          <div id="cell23" class="cell"></div>
+          <div id="cell24" class="cell"></div>
+          <div id="cell25" class="cell"></div>
+          <div id="cell26" class="cell"></div>
+          <div id="cell27" class="cell"></div>
+          <div id="cell28" class="cell"></div>
+          <div id="cell29" class="cell"></div>
+          <div id="cell30" class="cell"></div>
+          <div id="cell31" class="cell"></div>
+          <div id="cell32" class="cell"></div>
+          <div id="cell33" class="cell"></div>
+          <div id="cell34" class="cell"></div>
+          <div id="cell35" class="cell"></div>
+          <div id="cell36" class="cell"></div>
+          <div id="cell37" class="cell"></div>
+          <div id="cell38" class="cell"></div>
+          <div id="cell39" class="cell target"></div>
+          <div id="cell40" class="cell"></div>
+          <div id="cell41" class="cell"></div>
+          <div id="cell42" class="cell"></div>
+          <div id="cell43" class="cell"></div>
+          <div id="cell44" class="cell"></div>
+          <div id="cell45" class="cell"></div>
+          <div id="cell46" class="cell"></div>
+          <div id="cell47" class="cell"></div>
+          <div id="cell48" class="cell"></div>
+          <div id="cell49" class="cell"></div>
+          <div id="cell50" class="cell"></div>
+          <div id="cell51" class="cell"></div>
+          <div id="cell52" class="cell"></div>
+          <div id="cell53" class="cell"></div>
+          <div id="cell54" class="cell"></div>
+          <div id="cell55" class="cell"></div>
+          <div id="cell56" class="cell"></div>
+          <div id="cell57" class="cell"></div>
+          <div id="cell58" class="cell"></div>
+          <div id="cell59" class="cell"></div>
+          <div id="cell60" class="cell"></div>
+          <div id="cell61" class="cell"></div>
+          <div id="cell62" class="cell"></div>
+          <div id="cell63" class="cell"></div>
+          <div id="cell64" class="cell"></div>
+          <div id="cell65" class="cell"></div>
+          <div id="cell66" class="cell"></div>
+          <div id="cell67" class="cell"></div>
+          <div id="cell68" class="cell"></div>
+          <div id="cell69" class="cell"></div>
+          <div id="cell70" class="cell"></div>
+          <div id="cell71" class="cell"></div>
+          <div id="cell72" class="cell current"></div>
+          <div id="cell73" class="cell empty"></div>
+          <div id="cell74" class="cell empty"></div>
+          <div id="cell75" class="cell empty"></div>
+          <div id="cell76" class="cell empty"></div>
+          <div id="cell77" class="cell empty"></div>
+          <div id="cell78" class="cell empty"></div>
+          <div id="cell79" class="cell empty"></div>
+          <div id="cell80" class="cell empty"></div>
+          <div id="cell81" class="cell empty"></div>
+          <div id="cell82" class="cell empty"></div>
+          <div id="cell83" class="cell empty"></div>
+          <div id="cell84" class="cell empty"></div>
+          <div id="cell85" class="cell empty former-guess"></div>
+          <div id="cell86" class="cell empty"></div>
+          <div id="cell87" class="cell empty"></div>
+          <div id="cell88" class="cell empty"></div>
+          <div id="cell89" class="cell empty"></div>
+          <div id="cell90" class="cell empty"></div>
+          <div id="cell91" class="cell empty"></div>
+          <div id="cell92" class="cell empty"></div>
+          <div id="cell93" class="cell empty"></div>
+          <div id="cell94" class="cell empty"></div>
+          <div id="cell95" class="cell former-guess"></div>
+          <div id="cell96" class="cell empty"></div>
+          <div id="cell97" class="cell empty"></div>
+          <div id="cell98" class="cell empty"></div>
+          <div id="cell99" class="cell empty"></div>
+          <div id="cell100" class="cell empty"></div>
+        </div>
+        <div id="guess-container">
+          <div class="guess">2</div>
+          <div class="guess">10</div>
+          <div class="guess">95</div>
+          <div class="guess">72</div>
+          <div class="guess">85</div>
+        </div>
+        <div id="input-container">
+          <div>Your guess:</div>
+          <input type="text" name="Your number" id="txtNumber" maxlength="3" />
+          <input type="button" value="Guess!" id="btnGuess" />
+        </div>
+      </div>
+      <!-- Tutorial container -->
+      <div class="tutorial">
+        <h2>How To Play</h2>
+        <p>
+          The computer comes up with a number from 1 - 100. Your goal is to
+          guess that number before your guesses run out!
+        </p>
+        <br />
+        <p>The computer will let you know if:</p>
+        <ul>
+          <li>You guess the number</li>
+          <li>You guessed higher than the target number</li>
+          <li>You guessed lower than the target number</li>
+        </ul>
+        <p>How the diagram works:</p>
+        <ul id="cells-tutorial">
           <li>
-            <a class="game-link" href="./rock-paper-scissors.html"
-              >Rock Paper Scissors</a
-            >
+            <div class="cell"></div>
+            is a number that might be the target
           </li>
           <li>
-            <a class="game-link" href="./tic-tac-toe.html">Tic Tac Toe</a>
+            <div class="cell current"></div>
+            is one of the current guesses
           </li>
           <li>
-            <a id="selected-link" class="game-link" href="./guessing-game.html"
-              >Guessing Game</a
-            >
+            <div class="cell former-guess"></div>
+            is a previous guess
           </li>
           <li>
-            <a class="game-link" href="./hangman.html">Hangman</a>
+            <div class="cell empty"></div>
+            is a number that is outside of the current range
+          </li>
+          <li>
+            <div class="cell target"></div>
+            is the target, you've won!
           </li>
         </ul>
       </div>
-    </header>
-    <div class="content">
-      <div id="main">
-        <h1>Guessing Game</h1>
-        <div id="guessing-game-container" class="game-container">
-          <div id="game-state">Guess lower!</div>
-          <div id="cell-container">
-            <div id="cell1" class="cell empty"></div>
-            <div id="cell2" class="cell former-guess"></div>
-            <div id="cell3" class="cell empty"></div>
-            <div id="cell4" class="cell empty"></div>
-            <div id="cell5" class="cell empty"></div>
-            <div id="cell6" class="cell empty"></div>
-            <div id="cell7" class="cell empty"></div>
-            <div id="cell8" class="cell empty"></div>
-            <div id="cell9" class="cell empty"></div>
-            <div id="cell10" class="cell current"></div>
-            <div id="cell11" class="cell"></div>
-            <div id="cell12" class="cell"></div>
-            <div id="cell13" class="cell"></div>
-            <div id="cell14" class="cell"></div>
-            <div id="cell15" class="cell"></div>
-            <div id="cell16" class="cell"></div>
-            <div id="cell17" class="cell"></div>
-            <div id="cell18" class="cell"></div>
-            <div id="cell19" class="cell"></div>
-            <div id="cell20" class="cell"></div>
-            <div id="cell21" class="cell"></div>
-            <div id="cell22" class="cell"></div>
-            <div id="cell23" class="cell"></div>
-            <div id="cell24" class="cell"></div>
-            <div id="cell25" class="cell"></div>
-            <div id="cell26" class="cell"></div>
-            <div id="cell27" class="cell"></div>
-            <div id="cell28" class="cell"></div>
-            <div id="cell29" class="cell"></div>
-            <div id="cell30" class="cell"></div>
-            <div id="cell31" class="cell"></div>
-            <div id="cell32" class="cell"></div>
-            <div id="cell33" class="cell"></div>
-            <div id="cell34" class="cell"></div>
-            <div id="cell35" class="cell"></div>
-            <div id="cell36" class="cell"></div>
-            <div id="cell37" class="cell"></div>
-            <div id="cell38" class="cell"></div>
-            <div id="cell39" class="cell target"></div>
-            <div id="cell40" class="cell"></div>
-            <div id="cell41" class="cell"></div>
-            <div id="cell42" class="cell"></div>
-            <div id="cell43" class="cell"></div>
-            <div id="cell44" class="cell"></div>
-            <div id="cell45" class="cell"></div>
-            <div id="cell46" class="cell"></div>
-            <div id="cell47" class="cell"></div>
-            <div id="cell48" class="cell"></div>
-            <div id="cell49" class="cell"></div>
-            <div id="cell50" class="cell"></div>
-            <div id="cell51" class="cell"></div>
-            <div id="cell52" class="cell"></div>
-            <div id="cell53" class="cell"></div>
-            <div id="cell54" class="cell"></div>
-            <div id="cell55" class="cell"></div>
-            <div id="cell56" class="cell"></div>
-            <div id="cell57" class="cell"></div>
-            <div id="cell58" class="cell"></div>
-            <div id="cell59" class="cell"></div>
-            <div id="cell60" class="cell"></div>
-            <div id="cell61" class="cell"></div>
-            <div id="cell62" class="cell"></div>
-            <div id="cell63" class="cell"></div>
-            <div id="cell64" class="cell"></div>
-            <div id="cell65" class="cell"></div>
-            <div id="cell66" class="cell"></div>
-            <div id="cell67" class="cell"></div>
-            <div id="cell68" class="cell"></div>
-            <div id="cell69" class="cell"></div>
-            <div id="cell70" class="cell"></div>
-            <div id="cell71" class="cell"></div>
-            <div id="cell72" class="cell current"></div>
-            <div id="cell73" class="cell empty"></div>
-            <div id="cell74" class="cell empty"></div>
-            <div id="cell75" class="cell empty"></div>
-            <div id="cell76" class="cell empty"></div>
-            <div id="cell77" class="cell empty"></div>
-            <div id="cell78" class="cell empty"></div>
-            <div id="cell79" class="cell empty"></div>
-            <div id="cell80" class="cell empty"></div>
-            <div id="cell81" class="cell empty"></div>
-            <div id="cell82" class="cell empty"></div>
-            <div id="cell83" class="cell empty"></div>
-            <div id="cell84" class="cell empty"></div>
-            <div id="cell85" class="cell empty former-guess"></div>
-            <div id="cell86" class="cell empty"></div>
-            <div id="cell87" class="cell empty"></div>
-            <div id="cell88" class="cell empty"></div>
-            <div id="cell89" class="cell empty"></div>
-            <div id="cell90" class="cell empty"></div>
-            <div id="cell91" class="cell empty"></div>
-            <div id="cell92" class="cell empty"></div>
-            <div id="cell93" class="cell empty"></div>
-            <div id="cell94" class="cell empty"></div>
-            <div id="cell95" class="cell former-guess"></div>
-            <div id="cell96" class="cell empty"></div>
-            <div id="cell97" class="cell empty"></div>
-            <div id="cell98" class="cell empty"></div>
-            <div id="cell99" class="cell empty"></div>
-            <div id="cell100" class="cell empty"></div>
-          </div>
-          <div id="guess-container">
-            <div class="guess">2</div>
-            <div class="guess">10</div>
-            <div class="guess">95</div>
-            <div class="guess">72</div>
-            <div class="guess">85</div>
-          </div>
-          <div id="input-container">
-            <div>Your guess:</div>
-            <input
-              type="text"
-              name="Your number"
-              id="txtNumber"
-              maxlength="3"
-            />
-            <input type="button" value="Guess!" id="btnGuess" />
-          </div>
-        </div>
-        <div class="tutorial">
-          <h2>How To Play</h2>
-          <p>
-            The computer comes up with a number from 1 - 100. Your goal is to
-            guess that number before your guesses run out!
-          </p>
-          <br />
-          <p>The computer will let you know if:</p>
-          <ul>
-            <li>You guess the number</li>
-            <li>You guessed higher than the target number</li>
-            <li>You guessed lower than the target number</li>
-          </ul>
-          <p>How the diagram works:</p>
-          <ul id="cells-tutorial">
-            <li>
-              <div class="cell"></div>
-              is a number that might be the target
-            </li>
-            <li>
-              <div class="cell current"></div>
-              is one of the current guesses
-            </li>
-            <li>
-              <div class="cell former-guess"></div>
-              is a previous guess
-            </li>
-            <li>
-              <div class="cell empty"></div>
-              is a number that is outside of the current range
-            </li>
-            <li>
-              <div class="cell target"></div>
-              is the target, you've won!
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
-    <footer>
-      <div id="github-link">
-        <img src="./images/github-mark.png" alt="GitHub Logo" />
-        <a href="https://github.com/dfeiAlex/A-Boring-Site">GitHub Repo</a>
-      </div>
-      <p>&copy; Alex Dilion</p>
-    </footer>
-  </body>
+  </div>
+  <!-- Footer container -->
+  <footer>
+    <div id="github-link">
+      <img src="./images/github-mark.png" alt="GitHub Logo" />
+      <a href="https://github.com/dfeiAlex/A-Boring-Site">GitHub Repo</a>
+    </div>
+    <p>&copy; Alex Dilion</p>
+  </footer>
+</body>
+
 </html>

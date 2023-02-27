@@ -1,166 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./style/game-style.css" />
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
-    <title>Rock Paper Scissors</title>
-  </head>
 
-  <body>
-    <header>
-      <div id="title-container">
-        <div id="logo">
-          <p>a</p>
-        </div>
-        <a href="./index.html" id="logo-text">boring site</a>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/game-style.css" />
+  <!-- Webpage icon -->
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+  <!-- Webpage title -->
+  <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+  <!-- Contains the logo and navbar elements -->
+  <header>
+    <!-- Logo container -->
+    <div id="title-container">
+      <div id="logo">
+        <p>a</p>
       </div>
-      <div id="navbar-container">
-        <ul id="navbar">
+      <a href="./index.html" id="logo-text">boring site</a>
+    </div>
+    <!-- Navbar container -->
+    <div id="navbar-container">
+      <ul id="navbar">
+        <li>
+          <a id="selected-link" class="game-link" href="./rock-paper-scissors.html">Rock Paper Scissors</a>
+        </li>
+        <li>
+          <a class="game-link" href="./tic-tac-toe.html">Tic Tac Toe</a>
+        </li>
+        <li>
+          <a class="game-link" href="./guessing-game.html">Guessing Game</a>
+        </li>
+        <li>
+          <a class="game-link" href="./hangman.html">Hangman</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- Content of this page is inside this div -->
+  <div class="content">
+    <div id="main">
+      <!-- Content header -->
+      <h1>Rock Paper Scissors</h1>
+      <!-- Game container -->
+      <div id="rps-wrapper" class="game-container">
+        <div id="rps-container">
+          <div id="playerScore">2</div>
+          <div id="rps-main">
+            <div id="game-state">You Win! Rock beats scissors!</div>
+            <div class="img-container">
+              <img src="./images/rock.png" alt="User guess: Rock" id="playerImage" class="gameImage" />
+              <p>VS</p>
+              <img src="./images/scissors.png" alt="Computer guess: Scissors" id="computerImage" class="gameImage" />
+            </div>
+          </div>
+          <div id="computerScore">1</div>
+        </div>
+        <div id="input-container-rps">
+          <div>Pick a hand:</div>
+          <div class="btn-container">
+            <input type="image" src="./images/rock.png" alt="Rock button" class="rps-btn" id="btnRock" />
+            <input type="image" src="./images/paper.png" alt="Paper button" class="rps-btn" id="btnPaper" />
+            <input type="image" src="./images/scissors.png" alt="Scissors button" class="rps-btn" id="btnScissors" />
+          </div>
+        </div>
+      </div>
+      <!-- Tutorial container -->
+      <div class="tutorial">
+        <h2>How To Play</h2>
+        <p>
+          Play a game of rock paper scissors with the computer! Each hand
+          beats, loses to or ties with another. The first to 5 wins!
+        </p>
+        <br />
+        <p>Rules:</p>
+        <ul>
           <li>
-            <a
-              id="selected-link"
-              class="game-link"
-              href="./rock-paper-scissors.html"
-              >Rock Paper Scissors</a
-            >
+            To <span style="color: #17b9ff"><strong>win</strong></span> the
+            round, you must role a hand that beats the opponents hand.
           </li>
           <li>
-            <a class="game-link" href="./tic-tac-toe.html">Tic Tac Toe</a>
+            You <span style="color: #ed6a5a"><strong>lose</strong></span> if
+            the opponent roles a hand that beats yours.
           </li>
-          <li>
-            <a class="game-link" href="./guessing-game.html">Guessing Game</a>
-          </li>
-          <li>
-            <a class="game-link" href="./hangman.html">Hangman</a>
-          </li>
+          <li>A tie happens when both players role the same hand</li>
         </ul>
-      </div>
-    </header>
-    <div class="content">
-      <div id="main">
-        <h1>Rock Paper Scissors</h1>
-        <div id="rps-wrapper" class="game-container">
-          <div id="rps-container">
-            <div id="playerScore">2</div>
-            <div id="rps-main">
-              <div id="game-state">You Win! Rock beats scissors!</div>
-              <div class="img-container">
-                <img
-                  src="./images/rock.png"
-                  alt="User guess: Rock"
-                  id="playerImage"
-                  class="gameImage"
-                />
-                <p>VS</p>
-                <img
-                  src="./images/scissors.png"
-                  alt="Computer guess: Scissors"
-                  id="computerImage"
-                  class="gameImage"
-                />
-              </div>
-            </div>
-            <div id="computerScore">1</div>
+        <br>
+        <div id="diagram-container">
+          <div class="rps-tutorial">
+            <img src="./images/rock.png" alt="Rock" class="tutorial-image left" />
+            beats
+            <img src="./images/scissors.png" alt="Scissors" class="tutorial-image right" />
           </div>
-          <div id="input-container-rps">
-            <div>Pick a hand:</div>
-            <div class="btn-container">
-              <input
-                type="image"
-                src="./images/rock.png"
-                alt="Rock button"
-                class="rps-btn"
-                id="btnRock"
-              />
-              <input
-                type="image"
-                src="./images/paper.png"
-                alt="Paper button"
-                class="rps-btn"
-                id="btnPaper"
-              />
-              <input
-                type="image"
-                src="./images/scissors.png"
-                alt="Scissors button"
-                class="rps-btn"
-                id="btnScissors"
-              />
-            </div>
+          <div class="rps-tutorial">
+            <img src="./images/paper.png" alt="Paper" class="tutorial-image left" />
+            beats
+            <img src="./images/rock.png" alt="Rock" class="tutorial-image right" />
           </div>
-        </div>
-        <div class="tutorial">
-          <h2>How To Play</h2>
-          <p>
-            Play a game of rock paper scissors with the computer! Each hand
-            beats, loses to or ties with another. The first to 5 wins!
-          </p>
-          <br />
-          <p>Rules:</p>
-          <ul>
-            <li>
-              To <span style="color: #17b9ff"><strong>win</strong></span> the
-              round, you must role a hand that beats the opponents hand.
-            </li>
-            <li>
-              You <span style="color: #ed6a5a"><strong>lose</strong></span> if
-              the opponent roles a hand that beats yours.
-            </li>
-            <li>A tie happens when both players role the same hand</li>
-          </ul>
-          <br>
-          <div id="diagram-container">
-            <div class="rps-tutorial">
-              <img
-                src="./images/rock.png"
-                alt="Rock"
-                class="tutorial-image left"
-              />
-              beats
-              <img
-                src="./images/scissors.png"
-                alt="Scissors"
-                class="tutorial-image right"
-              />
-            </div>
-            <div class="rps-tutorial">
-              <img
-                src="./images/paper.png"
-                alt="Paper"
-                class="tutorial-image left"
-              />
-              beats
-              <img
-                src="./images/rock.png"
-                alt="Rock"
-                class="tutorial-image right"
-              />
-            </div>
-            <div class="rps-tutorial">
-              <img
-                src="./images/scissors.png"
-                alt="Scissors"
-                class="tutorial-image left"
-              />
-              beats
-              <img
-                src="./images/paper.png"
-                alt="Paper"
-                class="tutorial-image right"
-              />
-            </div>
+          <div class="rps-tutorial">
+            <img src="./images/scissors.png" alt="Scissors" class="tutorial-image left" />
+            beats
+            <img src="./images/paper.png" alt="Paper" class="tutorial-image right" />
           </div>
         </div>
       </div>
     </div>
-    <footer>
-      <div id="github-link">
-        <img src="./images/github-mark.png" alt="GitHub Logo" />
-        <a href="https://github.com/dfeiAlex/A-Boring-Site">GitHub Repo</a>
-      </div>
-      <p>&copy; Alex Dilion</p>
-    </footer>
-  </body>
+  </div>
+  <!-- Footer container -->
+  <footer>
+    <div id="github-link">
+      <img src="./images/github-mark.png" alt="GitHub Logo" />
+      <a href="https://github.com/dfeiAlex/A-Boring-Site">GitHub Repo</a>
+    </div>
+    <p>&copy; Alex Dilion</p>
+  </footer>
+</body>
+
 </html>
